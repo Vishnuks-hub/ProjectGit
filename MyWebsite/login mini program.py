@@ -7,8 +7,8 @@
 #     print("4. Exit")
 #     print("----------------------------")
 #     print(" ")
-# userNames =["Sanjay","Ganga","Gopika","Vrishya","Vishnu"]
-# passwords =["Sanjay12","1234","Enter","12345","Vish"]
+# userNames =["Ajay","Manu","Gopika","Dhrishya","Vishnu"]
+# passwords =["Ajay12","1234","Enter","12345","Vish"]
 
 # def login(userName,password):
 #   if userName in userNames:
