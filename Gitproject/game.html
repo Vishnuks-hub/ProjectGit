@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Pong — Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <div>
+        <p class="eyebrow">CLASSIC ARCADE</p>
+        <h1>Pong<span>.</span></h1>
+      </div>
+      <button id="reset-button" class="reset-button" type="button">New game</button>
+    </header>
+
+    <section class="scoreboard" aria-label="Scoreboard">
+      <div class="player-label"><span class="player-dot"></span><span>You</span></div>
+      <p class="score" aria-live="polite"><span id="player-score">0</span><span class="score-divider">:</span><span id="computer-score">0</span></p>
+      <div class="player-label computer-label"><span>Computer</span><span class="computer-dot"></span></div>
+    </section>
+
+    <div class="court-wrap">
+      <canvas id="game-canvas" width="900" height="520" aria-label="Pong game. Move your paddle with the mouse or up and down arrow keys."></canvas>
+      <div id="announcement" class="announcement" aria-live="polite">First to 5 wins</div>
+    </div>
+
+    <footer class="game-footer">
+      <p><span class="keycap">↑</span> <span class="keycap">↓</span> Move paddle <span class="or">or</span> move your mouse over the court</p>
+      <p class="match-status" id="match-status">First to 5 points</p>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
